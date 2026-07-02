@@ -1,0 +1,111 @@
+body{
+    font-family:Arial, sans-serif;
+    margin:0;
+    padding:0;
+    background-color:#f4f4f4;
+
+}
+
+header{
+    background-color:black;
+    color:gold;
+    text-align:center;
+    padding:20px;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    background-color:#333333;
+    padding:10px;
+}
+
+nav a {
+    color:black;
+    text-decoration:none;
+    font-weight:bold;
+}
+nav a:hover {
+    color:gold;
+}
+section {
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+}
+#about {
+    background-color: #f8f0e3;
+}
+
+#gallery {
+    background-color: #fff7e6;
+}
+
+#prices {
+    background-color: #f8f0e3;
+}
+
+#why-us {
+    background-color: #fff7e6;
+}
+
+#contact {
+    background-color: black;
+    color: white;
+}
+h2 {
+    color: #d4af37; /* gold */
+    text-align: center;
+    margin-bottom: 1rem;
+}
+section {
+    border: 3px solid #d4af37;
+}
+a.button {
+    background-color: #ff8c42;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+a.button:hover {
+    background-color: #d4af37;
+}
+.gallery-grid img {
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid #d4af37;
+}
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+.gallery-grid img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+#about img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+#hero img {
+    width: 100%;
+    max-width: 800px;  
+    height: auto;       
+    display: block;
+    margin: 0 auto;    
+}
+
+
+
+footer {
+    background-color: black;
+    color: gold;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
