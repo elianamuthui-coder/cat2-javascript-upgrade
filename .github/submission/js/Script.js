@@ -62,6 +62,9 @@ addBtn.addEventListener("click", function () {
         li.remove();
         localStorage.setItem("wishlist",wishlistItems.innerHTML);
     });
+    localStorage.setItem("theme", "dark");
+
+    let savedTheme = localStorage.getItem("theme");
 
     li.appendChild(deleteBtn);
     wishlistItems.appendChild(li);
