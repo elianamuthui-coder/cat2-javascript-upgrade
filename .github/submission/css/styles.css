@@ -109,3 +109,19 @@ footer {
     width: 100%;
     bottom: 0;
 }
+.gallery-grid img{
+    width:250px;
+    height:250px;
+}
+.price-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 200px;
+    border-radius: 10px;
+}
