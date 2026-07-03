@@ -36,3 +36,34 @@ products.forEach(function(product){
     priceCards.appendChild(card);
 
 });
+
+// Task 2 - Wishlist Add & Remove
+
+const addBtn = document.getElementById("addBtn");
+const wishlistInput = document.getElementById("wishlistInput");
+const wishlistItems = document.getElementById("wishlistItems");
+
+addBtn.addEventListener("click", function () {
+
+    const item = wishlistInput.value.trim();
+
+    if (item === "") {
+        alert("Please enter an item.");
+        return;
+    }
+
+    const li = document.createElement("li");
+    li.textContent = item + " ";
+
+    const deleteBtn = document.createElement("button");
+    deleteBtn.textContent = "Remove";
+
+    deleteBtn.addEventListener("click", function () {
+        li.remove();
+    });
+
+    li.appendChild(deleteBtn);
+    wishlistItems.appendChild(li);
+
+    wishlistInput.value = "";
+});
