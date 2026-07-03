@@ -119,4 +119,12 @@ if (savedWishlist) {
     });
 }
 
+// Task 5 - Banner Caption Toggle
+const banner = document.getElementById("banner");
+const caption = document.getElementById("bannerCaption");
+
+banner.addEventListener("click", function () {
+    caption.classList.toggle("hidden");
+});
+
 
