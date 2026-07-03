@@ -60,12 +60,15 @@ addBtn.addEventListener("click", function () {
 
     deleteBtn.addEventListener("click", function () {
         li.remove();
+        localStorage.setItem("wishlist",wishlistItems.innerHTML);
     });
 
     li.appendChild(deleteBtn);
     wishlistItems.appendChild(li);
 
     wishlistInput.value = "";
+    localStorage.setItem("wishlist", wishlistItems.innerHTML);
+
 });
 
 // Task 3 - Form Validation
@@ -93,4 +96,26 @@ contactForm.addEventListener("submit", function(event){
 
 });
 
-git remote -v
+// Task 4 - Load saved wishlist
+
+const savedWishlist = localStorage.getItem("wishlist");
+
+if (savedWishlist) {
+    wishlistItems.innerHTML = savedWishlist;
+
+    // Reconnect the remove buttons
+    document.querySelectorAll("#wishlistItems button").forEach(function(button) {
+
+        button.addEventListener("click", function() {
+            button.parentElement.remove();
+
+            localStorage.setItem(
+                "wishlist",
+                wishlistItems.innerHTML
+            );
+        });
+
+    });
+}
+
+
