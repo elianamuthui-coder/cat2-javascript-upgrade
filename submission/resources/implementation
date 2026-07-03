@@ -1,0 +1,4 @@
+loop-render used for products/art pieces
+wishlist uses DOM + localStorage
+form validation prevents empty submissions
+banner uses classList.toggle for reveal effectgit add .
