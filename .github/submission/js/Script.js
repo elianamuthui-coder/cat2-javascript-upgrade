@@ -67,3 +67,28 @@ addBtn.addEventListener("click", function () {
 
     wishlistInput.value = "";
 });
+
+// Task 3 - Form Validation
+
+const contactForm = document.getElementById("contactForm");
+const customerName = document.getElementById("customerName");
+const customerEmail = document.getElementById("customerEmail");
+const formMessage = document.getElementById("formMessage");
+
+contactForm.addEventListener("submit", function(event){
+
+    event.preventDefault();
+
+    if(customerName.value === "" || customerEmail.value === ""){
+
+        formMessage.textContent = "Please fill in all fields.";
+
+    } else{
+
+        formMessage.textContent =
+        "Thank you " + customerName.value + "! We will contact you soon.";
+
+        contactForm.reset();
+    }
+
+});

@@ -101,13 +101,15 @@ a.button:hover {
 
 
 footer {
-    background-color: black;
+    background-color: rgb(0, 166, 255);
     color: gold;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     position: fixed;
     width: 100%;
     bottom: 0;
+    height: 40px;
+
 }
 .gallery-grid img{
     width:250px;
