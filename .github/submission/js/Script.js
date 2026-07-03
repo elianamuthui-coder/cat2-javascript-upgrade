@@ -92,3 +92,5 @@ contactForm.addEventListener("submit", function(event){
     }
 
 });
+
+git remote -v
